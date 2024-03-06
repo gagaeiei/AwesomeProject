@@ -23,28 +23,19 @@ import { PaperProvider } from 'react-native-paper';
 import TestPaper from './screens/week4/TestPaper';
 import Resort from './screens/week3/Resort';
 import PaperQuiz from './screens/week4/PaperQuiz';
+import Health from './screens/week5/Health';
+import ChartKitScreen from './screens/week5/ChartKitScreen';
 
 
 
 
 export default function App() {
   return (
-    //<Ex01/>
-    //<Ex02/>
-    //<Ex03/>
-    //<Ex04/>
-    //<Ex05/>
-    //<Ex06/>
-    //<Ex07/>
-    //<Ex08/>
-    //<Ex09/>
-    //<Ex10/>
-    //<Ex11/>
-    //<Ex12/>
+  
 
-    <PaperProvider>
-      <PaperQuiz />
-    </PaperProvider>
+    // <PaperProvider>
+      // <PaperQuiz />
+    // </PaperProvider>
 
     ///<View style={{ flex: 1 }}>
    
@@ -56,8 +47,8 @@ export default function App() {
    
     //<Resort/>
 
-    
-    
+    // <Health />
+    <ChartKitScreen/>
 
 
 
