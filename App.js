@@ -25,6 +25,8 @@ import Resort from './screens/week3/Resort';
 import PaperQuiz from './screens/week4/PaperQuiz';
 import Health from './screens/week5/Health';
 import ChartKitScreen from './screens/week5/ChartKitScreen';
+import Home from './screens/Week6/Home';
+import FlatListExample from './screens/Week6/FlatListExample';
 
 
 
@@ -48,8 +50,9 @@ export default function App() {
     //<Resort/>
 
     // <Health />
-    <ChartKitScreen/>
-
+    //<ChartKitScreen/>
+    <Home  />
+    //<FlatListExample  />
 
 
   );
