@@ -5,6 +5,7 @@ import Heartbeat from "../../components/week5/Heartbeat";
 
 
 export default function Health() {
+    const navigation = useNavigation();
     return (
         <View style={{ flex: 1 , backgroundColor : 'lightblue', justifyContent : "center", padding : 20 }}>
             <Bmi  />

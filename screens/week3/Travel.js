@@ -8,14 +8,16 @@ import Menu from '../../components/Section5.js/Menu';
 
 
 
+
 export default function Travel() {
+ 
     return (
         <ScrollView>
             <View style={{ flex: 1, paddingTop : 50  }}>
                 <Menu />
                 <Card />
                 <Hotel />
-                <Signup />
+              
                
 
                

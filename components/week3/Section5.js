@@ -1,5 +1,5 @@
 import React from "react";
-import {  View,  TextInput } from "react-native";
+import {  View} from "react-native";
 import MyIcon from "./MyIcon";
 
 export default function Section5() {
