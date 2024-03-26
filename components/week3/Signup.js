@@ -9,6 +9,6 @@ export default function Signup() {
             <TextInput style={{ fontSize : 20 , marginTop : 10 }}  placeholder="Input Email" />
             <TextInput style={{ fontSize : 20 , marginTop : 10 , marginBottom : 10 }}  placeholder="Input Address" />
             <Button title="Sign up" color="red" />
-        </View>
+        </View>    
     );
 }

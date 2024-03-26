@@ -1,20 +1,20 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from '../screens/week6/Home';
 import Ant from '../screens/week7/Ant';
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome , FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
 import Bird from '../screens/week7/Bird';
 import Cat from '../screens/week7/Cat';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { FontAwesome6 } from '@expo/vector-icons';
 import HomeStack from './HomeStack';
+
 
 const Tab = createBottomTabNavigator();
 
 export default function BottomTab() {
     return (
-        <Tab.Navigator screenOptions={{ tabBarActiveTintColor: 'tomato', tabBarInactiveTintColor: 'gray' }}>
-          <Tab.Screen
-            name="HomeStack"
+        <Tab.Navigator screenOptions={{ tabBarActiveTintColor: 'tomato', tabBarInactiveTintColor: 'gray' }} >
+          <Tab.Screen 
+            name="HomeStack" 
             component={HomeStack}
             options={{
               tabBarLabel: "หน้าหลัก",
@@ -35,19 +35,19 @@ export default function BottomTab() {
             component={Bird}
             options={{
               tabBarLabel: "นก",
-              tabBarIcon: ({ color, size }) => ( <MaterialCommunityIcons name="bird" size={24} color="black" /> ),
+              tabBarIcon: ({ color, size }) => ( <MaterialCommunityIcons  name="bird" color={color} size={size} /> ),
             }}
           />
-          <Tab.Screen
+
+<Tab.Screen
             name="Cat"
             component={Cat}
             options={{
               tabBarLabel: "แมว",
-              tabBarIcon: ({ color, size }) => ( <FontAwesome6 name="cat" size={24} color="black" /> ),
+              tabBarIcon: ({ color, size }) => ( <FontAwesome5 name="cat" color={color} size={size} /> ),
             }}
           />
         </Tab.Navigator>
       );
+    }
     
-
-}
